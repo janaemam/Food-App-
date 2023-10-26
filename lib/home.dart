@@ -327,15 +327,19 @@ Column popular(){
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Padding(padding: const EdgeInsets.all(5),
+                children: <Widget> [
+                  Expanded(
+                    flex:2,
+                  child: Padding(padding: const EdgeInsets.all(5),
                   child: SvgPicture.asset(popularDiets[index].iconPath,
                     height: 45,
                     width: 45,
                   ),
                     ),
-
-                  Column(
+                  ),
+                  Expanded(
+                    flex: 4,
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -355,7 +359,11 @@ Column popular(){
                       )
                     ],
                   ),
-                  SvgPicture.asset('things/icons/button.svg', height: 25,)
+                  ),
+                  Expanded(
+                    flex:2,
+                  child: SvgPicture.asset('things/icons/button.svg', height: 25,)
+                  )
                 ],
               ),
             );
