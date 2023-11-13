@@ -1,6 +1,8 @@
 # food_app
 
-A new Flutter project.
+This is just a food app home page with buttons that redirect you to other pages. 
+This is not functional or usefull, it's just for practice.
+
 
 ## Getting Started
 
